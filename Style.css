@@ -113,12 +113,11 @@ a {
     left: 5px;
 }
 #bio-image {
-    position: relative;
-    top: 0px;
+    float: left;
     width: 400px;
-    left: 0px
-    
+    display: block;
 }
+
 #figure {
   position: relative;
   
@@ -136,7 +135,8 @@ a {
 }
 
 #contact-info {
-    position: relative;
+    float: left;
+    clear: left;
     margin-top: 10px;
     padding: 0;
     list-style-type: none;
