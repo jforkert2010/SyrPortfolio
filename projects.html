@@ -1,117 +1,183 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta charset="UTF-8">
-    <title>Home</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/Style.css">
+<title>Justin Forkert | Projects</title>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/Style.css">
+
 </head>
-    <main class="container">
 
+<body>
 
-        <nav class="navbar">
-            <ul>
-                 
-                 <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Profolio</a>
-                </li>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+
+        <a class="navbar-brand" href="index.html">Justin Forkert</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+
+            <ul class="navbar-nav ml-auto">
+
                 <li class="nav-item">
-                    <a class="nav-link" href="projects.html">Projects</a>
+                    <a class="nav-link" href="index.html">Portfolio</a>
                 </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                        Projects
+                    </a>
+
+                    <div class="dropdown-menu">
+
+                        <a class="dropdown-item" href="NBA.html">NBA Draft Pick Correlations</a>
+                        <a class="dropdown-item" href="wine.html">Wine Quality</a>
+                        <a class="dropdown-item" href="Pokemon.html">Pokedex (SQL Database)</a>
+                        <a class="dropdown-item" href="Climate.html">Climate Change Impacts</a>
+
+                    </div>
+                </li>
+
                 <li class="nav-item">
                     <a class="nav-link" href="mailto:jforkert2010@gmail.com">Contact</a>
                 </li>
-            </ul>
-        </nav>
-
-        <div class="collapse navbar-collapse" id="main-navbar">
-            <ul class="nav navbar-nav navbar-right">
-
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        Projects <span class="caret"></span>
-                    </a>
-
-                    <ul class="dropdown-menu">
-                        <li><a href="NBA_Project.html">NBA Draft Pick Correlations</a></li>
-                        <li><a href="wine.html">Wine Quality</a></li>
-                        <li><a href="Pokemon.html">Pokedex</a></li>
-                        <li><a href="Climate.html">Housing vs Climate</a></li>
-                    </ul>
-                </li>
-
-                <li><a href="index.html">Portfolio</a></li>
-                <li><a href="data.html">Data</a></li>
 
             </ul>
+
         </div>
 
     </div>
 </nav>
-    <!-- End of navbar -->
-    <!-- Start of container -->
-    <div class="container">
-        <article class="description-content row">
-            <div class="col-xs-12">
-                <h1 class="description-header">Projects</h1>
-                <hr class="description-hr"</hr>
-                <p class="description-text"></p>
-                <p class="description-text">Click any plot to get an in-depth analysis.</p>
-            </div>
-            <div class="col-md-6">
-                <h2 class="comparison-header">NBA Draft Pick correlations</h2>
-                <a href="NBA.html"><img src="NBAcourt.webp" alt="NBA project" class="comparison-image img-responsive"></a>
-                <hr class="visible-xs visible-sm">
-                <p class="description-text">
-                    In this project we originally used datasets from kaggle for player statistics. Utimatley we wanted to see if draft pick had any determination over career.
-                    Fortunately like most major sports leagues in America, the NBA has collected large amounts of data and has calculated many statistical values since nearly the beginning.
-                    Our job was to simply make sense out of all of this data.
-                </p>
-            </div>
-            <div class="col-md-6">
-                <h2 class="comparison-header">Wine Quality</h2>
-                <a href="wine.html"><img src="Wine_sampling.webp" alt="Wine Project" class="comparison-image img-responsive"></a>
-                <hr class="visible-xs visible-sm">
-                <p class="description-text">
-                   This project is based on a dataset on a quality assessment of Portuguese Wine. Each wine was tasted by an expert and given a rating from 1 to 10. This data also contained measured values for each wine such 
-                   as pH. Our goal was to see which of these attributes would predict if the wine was good (rating of 7 or higher). The dataset is from Kaggle.
-                </p>
-            </div>
-            <div class="col-md-6">
-                <h2 class="comparison-header">Pokedex(SQL Database)</h2>
-                <a href="Pokemon.html"><img src="Pokemon.JPG" alt="Latitude vs. Cloudiness" class="comparison-image img-responsive"></a>
-                <hr class="visible-xs visible-sm">
-                <p class="description-text">
-                    The goal in this project was to create a functional SQL database to store the data of pokemon. 
-                </p>
-            </div>
-            <div class="col-md-6">
-                <h2 class="comparison-header">Climate Change Impacts</h2>
-                <a href="Climate.html"><img src="IntenseWildfire.png" alt="Climate" class="comparison-image img-responsive"></a>
-                <hr class="visible-xs visible-sm">
-                <p class="description-text">
-                    In this project we attemped to use climate change data to predict real estate.
-                </p>
-            </div>
 
+<!-- PAGE HEADER -->
 
-        </article>
-    </div>
-    <!-- End of container  -->
-    <!-- Start of footer -->
-    <footer class="footer navbar-fixed-bottom">
-        <div class="two-toned-footer-color"></div>
-        <p class="text-muted text-muted-footer text-center">
-        </p>
-    </footer>
-    <!-- End of footer -->
-    <!-- jQuery CDN -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<div class="container mt-5">
 
-    <!-- Bootstrap CDN https://www.provi.com/blog/operations/how-to-profitably-price-wine -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<h1 class="text-center mb-3">Projects</h1>
+<hr>
+
+<p class="text-center mb-5">
+Click any project to view a full analysis.
+</p>
+
+<div class="row">
+
+<!-- PROJECT 1 -->
+
+<div class="col-md-6 mb-4">
+
+<div class="card">
+
+<img src="NBAcourt.webp" class="card-img-top" alt="NBA Project">
+
+<div class="card-body">
+
+<h5 class="card-title">NBA Draft Pick Correlations</h5>
+
+<p class="card-text">
+Using Kaggle player statistics, this project examines whether NBA draft position influences long-term career performance.
+</p>
+
+<a href="NBA.html" class="btn btn-dark">View Project</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- PROJECT 2 -->
+
+<div class="col-md-6 mb-4">
+
+<div class="card">
+
+<img src="Wine_sampling.webp" class="card-img-top" alt="Wine Project">
+
+<div class="card-body">
+
+<h5 class="card-title">Wine Quality Analysis</h5>
+
+<p class="card-text">
+Analyzing Portuguese wine data to determine which chemical attributes best predict wine quality ratings.
+</p>
+
+<a href="wine.html" class="btn btn-dark">View Project</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- PROJECT 3 -->
+
+<div class="col-md-6 mb-4">
+
+<div class="card">
+
+<img src="Pokemon.JPG" class="card-img-top" alt="Pokemon Database">
+
+<div class="card-body">
+
+<h5 class="card-title">Pokédex SQL Database</h5>
+
+<p class="card-text">
+A relational SQL database designed to store and manage Pokémon data efficiently.
+</p>
+
+<a href="Pokemon.html" class="btn btn-dark">View Project</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- PROJECT 4 -->
+
+<div class="col-md-6 mb-4">
+
+<div class="card">
+
+<img src="IntenseWildfire.png" class="card-img-top" alt="Climate Project">
+
+<div class="card-body">
+
+<h5 class="card-title">Climate Change Impacts</h5>
+
+<p class="card-text">
+Exploring relationships between climate change data and potential real-estate risk factors.
+</p>
+
+<a href="Climate.html" class="btn btn-dark">View Project</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+<!-- FOOTER -->
+
+<footer class="text-center mt-5 mb-4">
+<p>© 2026 Justin Forkert</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
 </body>
-
 </html>
