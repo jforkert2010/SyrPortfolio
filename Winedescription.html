@@ -1,6 +1,3 @@
-﻿<!DOCTYPE html>
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,78 +9,93 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/Style.css">
-
 </head>
 
 <body>
 
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
 
-            <a class="navbar-brand" href="index.html">Justin Forkert</a>
+        <a class="navbar-brand" href="index.html">Justin Forkert</a>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <div class="collapse navbar-collapse" id="mainNavbar">
+        <div class="collapse navbar-collapse" id="mainNavbar">
 
-                <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav ml-auto">
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Portfolio</a>
-                    </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Portfolio</a>
+                </li>
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
-                            Projects
-                        </a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                        Projects
+                    </a>
 
-                        <div class="dropdown-menu">
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="NBA.html">NBA Draft Pick Correlations</a>
+                        <a class="dropdown-item" href="wine.html">Wine Quality</a>
+                        <a class="dropdown-item" href="Pokemon.html">Pokedex (SQL Database)</a>
+                        <a class="dropdown-item" href="Climate.html">Climate Change Impacts</a>
+                    </div>
+                </li>
 
-                            <a class="dropdown-item" href="NBA.html">NBA Draft Pick Correlations</a>
-                            <a class="dropdown-item" href="wine.html">Wine Quality</a>
-                            <a class="dropdown-item" href="Pokemon.html">Pokedex (SQL Database)</a>
-                            <a class="dropdown-item" href="Climate.html">Climate Change Impacts</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="mailto:jforkert2010@gmail.com">Contact</a>
+                </li>
 
-                        </div>
-                    </li>
+            </ul>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="mailto:jforkert2010@gmail.com">Contact</a>
-                    </li>
+        </div>
 
-                </ul>
+    </div>
+</nav>
+
+<!-- PROJECT CONTENT -->
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+
+            <h1 class="text-center mb-3">Average Assists Vs Draft Pick</h1>
+            <hr>
+
+            <p class="text-center mb-4">
+                This project analyzes the relationship between NBA draft position and average assists.
+                The goal was to explore whether draft order is predictive of player performance, specifically playmaking ability.
+            </p>
+
+            <!-- BUTTONS -->
+            <div class="mt-4">
+
+                <a href="writeup.html" class="btn btn-dark btn-block mb-2" target="_blank">
+                    View Write-Up
+                </a>
+
+                <a href="presentation.pdf" class="btn btn-secondary btn-block mb-2" target="_blank">
+                    View Presentation
+                </a>
+
+                <a href="https://github.com/yourusername/project" class="btn btn-outline-dark btn-block" target="_blank">
+                    View Code
+                </a>
 
             </div>
 
         </div>
-    </nav>
-    <div class="col-md-6">
-        <h1 class="comparison-header">Average Assists Vs Draft Pick</h1>
-
-        <hr class="visible-xs visible-sm"><a class="link"></a>  <p class="description-text">
-            Summary/Background: Vinho Verde wine was rated by taste testers, who provided a score from 0 to 10 with higher being better.
-            This data set consisted of the quality score along with the measurements of attributes like pH, sulfates, etc.
-        </p>
     </div>
-    <div class="mt-3">
+</div>
 
-        <a href="writeup.html" class="btn btn-dark mr-2" target="_blank">
-            View Write-Up
-        </a>
+<!-- FOOTER -->
+<footer class="text-center mt-5 mb-4">
+    <p>© 2026 Justin Forkert</p>
+</footer>
 
-        <a href="presentation.pdf" class="btn btn-secondary mr-2" target="_blank">
-            View Presentation
-        </a>
-
-        <a href="https://github.com/yourusername/project" class="btn btn-outline-dark" target="_blank">
-            View Code
-        </a>
-
-    </div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
 </body>
-
 </html>
