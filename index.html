@@ -1,22 +1,32 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Justin Forkert | Projects</title>
+    <title>Justin Forkert | Data Scientist</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="Style.css">
+
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .hero { padding: 60px 0; }
+        .profile-img { max-width: 250px; border-radius: 50%; }
+        .section-title { margin-top: 40px; margin-bottom: 20px; font-weight: bold; }
+        .card { transition: transform 0.2s; }
+        .card:hover { transform: scale(1.03); }
+        footer { margin-top: 50px; padding: 20px 0; background-color: #343a40; color: white; text-align: center; }
+    </style>
 </head>
+
 <body>
+
+<!-- MATCHED NAVBAR -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
 
         <a class="navbar-brand" href="index.html">Justin Forkert</a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -34,7 +44,6 @@
                     </a>
 
                     <div class="dropdown-menu">
-
                         <a class="dropdown-item" href="projects.html">Projects Summary Page</a>
                         <a class="dropdown-item" href="Winedescription.html">Wine Quality Analysis</a>
                         <a class="dropdown-item" href="PokemonDescription.html">Pokedex SQL Database</a>
@@ -42,7 +51,6 @@
                         <a class="dropdown-item" href="Stock_Market_Pred.html">Stock Market Prediction</a>
                         <a class="dropdown-item" href="BioMass.html">Biomass Prediction (SQL Database)</a>
                         <a class="dropdown-item" href="Hospital_Readmission_Prevention.html">Hospital Readmission Prevention</a>
-
                     </div>
                 </li>
 
@@ -53,41 +61,77 @@
             </ul>
 
         </div>
-
     </div>
 </nav>
+
+<!-- HERO -->
+<section class="hero text-center">
+    <div class="container">
+        <img src="IMG_5416.jpg" alt="Justin Forkert" class="profile-img mb-3">
+        <h1>Hi, I'm Justin Forkert</h1>
+        <p class="lead">Data Scientist | Machine Learning | SQL | Python</p>
+        <a href="projects.html" class="btn btn-dark mt-3">View My Work</a>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="container">
+    <h2 class="section-title">About Me</h2>
+    <p>
+        Data Scientist with a background in Analytical Chemistry and experience in Excel, VBA, Python, and SQL. I completed Northwestern University's Data Science and Visualization Bootcamp and am currently pursuing a Master’s degree in Applied Data Science at Syracuse University.
+    </p>
+    <p>
+        I specialize in machine learning, data visualization, and uncovering insights from complex datasets. Currently working in the pharmaceutical industry managing master data for labeling commodities.
+    </p>
+</section>
+
+<!-- PROJECTS PREVIEW -->
+<section class="container">
+    <h2 class="section-title">Featured Projects</h2>
+    <div class="row">
+
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Financial Fraud Prediction</h5>
+                    <p class="card-text">Machine learning models to detect fraudulent transactions.</p>
+                    <a href="CreditFraud.html" class="btn btn-dark">View Project</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Wine Quality Analysis</h5>
+                    <p class="card-text">EDA and predictive modeling on wine datasets.</p>
+                    <a href="Winedescription.html" class="btn btn-dark">View Project</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Pokédex SQL Database</h5>
+                    <p class="card-text">Relational database for managing Pokémon data.</p>
+                    <a href="PokemonDescription.html" class="btn btn-dark">View Project</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Justin Forkert</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
 </body>
-
-<main class="container mt-5">
-  <div class="row align-items-center">
-    
-    <!-- Image Column -->
-    <div class="col-md-4 text-center mb-4">
-      <img src="IMG_5416.jpg" class="img-fluid rounded shadow" alt="Justin Forkert" style="max-width: 250px;">
-    </div>
-
-    <!-- Text Column -->
-    <div class="col-md-8">
-      <h2 class="mb-3">
-        Hi there! I'm Justin Forkert - a data scientist with a background in analytical chemistry.
-      </h2>
-
-      <p>
-        Data Scientist with a background in Analytical Chemistry and skills in Excel, VBA, Python, and SQL. 
-        Earned a certificate from Northwestern University’s data science and visualization bootcamp program. 
-        Enjoys finding the story within large data sets and using insights to solve real-world problems.
-      </p>
-
-      <h4 class="mt-4">Contact Info</h4>
-      <ul class="list-unstyled">
-        <li>Email: <a href="mailto:jforkert2010@gmail.com">jforkert2010@gmail.com</a></li>
-        <li>GitHub: <a href="https://github.com/jforkert2010" target="_blank">github.com/jforkert2010</a></li>
-      </ul>
-    </div>
-
-  </div>
-</main>
-
-
-
 </html>
+
