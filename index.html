@@ -1,257 +1,123 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Justin Forkert | Data Scientist</title>
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-
-    <style>
-        body { font-family: Arial, sans-serif; }
-        .hero { padding: 60px 0; }
-        .profile-img { max-width: 250px; border-radius: 50%; }
-        .section-title { margin-top: 40px; margin-bottom: 20px; font-weight: bold; }
-        .card { transition: transform 0.2s; }
-        .card:hover { transform: scale(1.03); }
-        footer { margin-top: 50px; padding: 20px 0; background-color: #343a40; color: white; text-align: center; }
-    </style>
-</head>
-
-<body>
-
-<!-- MATCHED NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-
-        <a class="navbar-brand" href="index.html">Justin Forkert</a>
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="mainNavbar">
-
-            <ul class="navbar-nav ml-auto">
-
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Portfolio</a>
-                </li>
-
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
-                        Projects
-                    </a>
-
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="projects.html">Projects Summary Page</a>
-                        <a class="dropdown-item" href="Winedescription.html">Wine Quality Analysis</a>
-                        <a class="dropdown-item" href="PokemonDescription.html">Pokedex SQL Database</a>
-                        <a class="dropdown-item" href="CreditFraud.html">Financial Fraud Prediction</a>
-                        <a class="dropdown-item" href="Stock_Market_Pred.html">Stock Market Prediction</a>
-                        <a class="dropdown-item" href="BioMass.html">Biomass Prediction (SQL Database)</a>
-                        <a class="dropdown-item" href="Hospital_Readmission_Prevention.html">Hospital Readmission Prevention</a>
-                    </div>
-                </li>
-                
-
-                <li class="nav-item">
-                    <a class="nav-link" href="mailto:jforkert2010@gmail.com">Contact</a>
-                </li>
-
-            </ul>
-
-        </div>
-    </div>
-</nav>
-
 <!-- HERO -->
-<section class="hero text-center">
+<section class="hero text-center bg-light">
     <div class="container">
         <img src="IMG_5416.jpg" alt="Justin Forkert" class="profile-img mb-3">
-        <h1>Hi, I'm Justin Forkert</h1>
-        <p class="lead">Data Scientist | Machine Learning | SQL | Python</p>
-        <a href="projects.html" class="btn btn-dark mt-3">View My Work</a>
+        <h1 class="font-weight-bold">Hi, I'm Justin Forkert</h1>
+        <p class="lead text-muted">Data Scientist | Machine Learning | SQL | Python</p>
+        <a href="projects.html" class="btn btn-dark mt-3 px-4">View My Work</a>
     </div>
 </section>
 
 <!-- ABOUT -->
-<section class="container-fluid text-left pl-0">
+<section class="container mt-5">
     <h2 class="section-title">About Me</h2>
-    <p>
-        Data Scientist with a background in Analytical Chemistry and experience in Excel, VBA, Python, and SQL. I completed Northwestern University's Data Science and Visualization Bootcamp and am currently pursuing a Master’s degree in Applied Data Science at Syracuse University.
-    </p>
-    <p>
-        I specialize in machine learning, data visualization, and uncovering insights from complex datasets. Currently working in the pharmaceutical industry managing master data for labeling commodities.
-    </p>
+    <div class="row">
+        <div class="col-md-8">
+            <p>
+                Data Scientist with a background in Analytical Chemistry and experience in Excel, VBA, Python, and SQL.
+                I completed Northwestern University's Data Science and Visualization Bootcamp and am currently pursuing
+                a Master’s degree in Applied Data Science at Syracuse University.
+            </p>
+            <p>
+                I specialize in machine learning, data visualization, and uncovering insights from complex datasets.
+                Currently working in the pharmaceutical industry managing master data for labeling commodities.
+            </p>
+        </div>
+    </div>
 </section>
 
 <!-- PROJECTS -->
-<!-- PROJECT 1 -->
-<h2 class="section-title">Projects</h2>
-      
-<div class="col-md-6 mb-4 d-flex">
-  <div class="card w-100">
+<section class="container mt-5">
+    <h2 class="section-title text-center">Projects</h2>
 
-    <img src="Wine_sampling.webp" class="card-img-top" alt="Wine Project">
+    <div class="row">
 
-    <div class="card-body d-flex flex-column">
-
-      <h5 class="card-title">Wine Quality Analysis</h5>
-
-      <p class="card-text">
-    Analyzing Portuguese wine data to determine which chemical attributes best predict wine quality ratings. For the final project in IST 687, I collaborated on an analysis of Vinho Verde wine to identify which chemical attributes most influenced quality ratings. 
-    The dataset included scores assigned by taste testers on a scale from 0 to 10, along with measurements such as pH, sulfates, and other physicochemical properties.As an introductory data science course, this project covered key stages of the data science lifecycle, from data exploration to predictive modeling.
-    Using R, we generated actionable insights by identifying relationships between wine characteristics and quality. Our analysis found that volatile acidity, chlorides, and density were negatively associated with wine quality, while alcohol content showed a positive relationship. 
-    I contributed across all phases of the project, with a primary focus on visualizing the distributions of wine characteristics. Understanding the variation and spread of these features was critical to interpreting the data effectively.
-    Additionally, we used a correlation matrix to examine relationships both between individual attributes and with the quality rating. To extend our analysis, we developed a decision tree model to predict wine quality based on these features.
-      </p>
-     <!-- BUTTONS -->
-      <a href="Winedescription.html" class="btn btn-dark mt-auto">View Project</a>
-      <div class="mt-4">
-       <a href="wine.html" class="btn btn-dark btn-block mb-2" target="_blank">View Write-Up</a>
-       <a href="https://github.com/jforkert2010/WineProject" class="btn btn-outline-dark btn-block" target="_blank">View Code (github)</a>
-       </div>
-    </div>
-
-  </div>
-</div>
-
-<!-- PROJECT 2 -->
-    
-<div>
-  <div>
-
-    <img src="Pokemon2.jpg" class="card-img-top" alt="Pokemon Database">
-
-    <div class="card-body d-flex flex-column">
-
-    <h5 class="card-title">Pokédex SQL Database</h5>
-
-
-      <p class="card-text">
-This project focused on collecting, storing, and accessing data by leveraging appropriate database technologies. Using SQL and Azure Data Studio, I designed and implemented a relational database to store and manage user Pokémon data. A BUS Matrix was developed to align the database structure with key business requirements.
-The project incorporated both conceptual and logical data modeling to effectively map relationships between entities. The resulting database supports core aspects of the Pokémon gameplay experience by connecting users with Pokémon, their types, base stats, and generations.
-Users can create accounts to track the Pokémon they have captured, while non-registered users can still query the database as a Generation 6 Pokédex resource. This dual functionality ensures accessibility for both active players and casual users.
-The primary goal of the database is to serve as a comprehensive reference tool for Pokémon players. By enabling users to explore Pokémon attributes, types, and generational data, the system supports strategic gameplay decisions. Players can run queries to identify and target specific Pokémon, helping them develop more effective battle strategies.
-This solution is designed for a wide range of users—from competitive players seeking a strategic advantage to casual fans interested in learning more about different Pokémon.
-      </p>
-  <!-- BUTTONS -->
-
-<a href="PokemonWriteup.html" class="btn btn-dark btn-block mb-2" target="_blank">View Write-Up</a>
-<a href="Pokemon.html" class="btn btn-secondary btn-block mb-2" target="_blank">View Presentation</a>
-<a href="https://github.com/jforkert2010/Pokemon_Project" class="btn btn-outline-dark btn-block" target="_blank">View Code (github page)</a>
-</div>
-
-    </div>
-
-  </div>
-</div>
-  <div class="container mt-4 text-center">
-          <h3 class="text-center mb-3">Conceptual Model</h3>
-          <img src="Pokemon_conceptual_model.png" class="img-fluid rounded shadow" alt="Database Schema">
-        <h3 class="text-center mb-3">Logical Model</h3>
-          <img src="Pokemon_Logical_Model.png" class="img-fluid mb-3 rounded shadow" alt="ER Diagram">
+        <!-- PROJECT CARD -->
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <img src="Wine_sampling.webp" class="card-img-top">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Wine Quality Analysis</h5>
+                    <p class="card-text">
+                        Used R to analyze Portuguese wine data and identify key chemical drivers of quality.
+                        Built visualizations, correlation matrices, and a decision tree model.
+                    </p>
+                    <a href="Winedescription.html" class="btn btn-dark mt-auto">View Project</a>
+                </div>
+            </div>
         </div>
 
-<!-- PROJECT 3 -->
-<div class="col-md-6 mb-4 d-flex">
-  <div class="card w-100">
+        <!-- PROJECT CARD -->
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <img src="Pokemon2.jpg" class="card-img-top">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Pokédex SQL Database</h5>
+                    <p class="card-text">
+                        Designed a relational SQL database in Azure Data Studio with full data modeling
+                        and user interaction for Pokémon tracking and querying.
+                    </p>
+                    <a href="Pokemon.html" class="btn btn-dark mt-auto">View Project</a>
+                </div>
+            </div>
+        </div>
 
-    <img src="CreditCards.jpg" class="card-img-top" alt="Financial Fraud Prediction">
-    <div class="card-body d-flex flex-column">
+        <!-- PROJECT CARD -->
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <img src="CreditCards.jpg" class="card-img-top">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Financial Fraud Prediction</h5>
+                    <p class="card-text">
+                        Built machine learning models to detect fraudulent transactions.
+                    </p>
+                    <a href="CreditFraud.html" class="btn btn-dark mt-auto">View Project</a>
+                </div>
+            </div>
+        </div>
 
-      <h5 class="card-title">Financial Fraud Prediction</h5>
+        <!-- PROJECT CARD -->
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <img src="stockmarket.png" class="card-img-top">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Stock Market Prediction</h5>
+                    <p class="card-text">
+                        Explored predictive relationships between market indicators and stock performance.
+                    </p>
+                    <a href="Stock_Market_Pred.html" class="btn btn-dark mt-auto">View Project</a>
+                </div>
+            </div>
+        </div>
 
-      <p class="card-text">
-        Built Machine Learning Models to identify possible fradulant transactions. 
-      </p>
+        <!-- PROJECT CARD -->
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <img src="Biomass.jpg" class="card-img-top">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Biomass Prediction</h5>
+                    <p class="card-text">
+                        Built predictive models using image-based data for biomass estimation.
+                    </p>
+                    <a href="BioMass.html" class="btn btn-dark mt-auto">View Project</a>
+                </div>
+            </div>
+        </div>
 
-      <a href="CreditFraud.html" class="btn btn-dark mt-auto">View Project</a>
-
-    </div>
-
-  </div>
-</div>
-
-    
-
-<!-- PROJECT 4 -->
-
-<div class="col-md-6 mb-4 d-flex">
-  <div class="card w-100">
-
-    <img src="stockmarket.png" class="card-img-top" alt="Wine Project">
-
-    <div class="card-body d-flex flex-column">
-
-     <h5 class="card-title">Stock Market Prediction</h5>
-
-      <p class="card-text">
-Exploring connection between how a stock will perform and other factors
-</p>
-
-      <a href="Stock_Market_Pred.html" class="btn btn-dark mt-auto">View Project</a>
-
-    </div>
-
-  </div>
-</div>
-
-    
-<!-- PROJECT 5 -->
-
-
-<div class="col-md-6 mb-4 d-flex">
-  <div class="card w-100">
-
-    <img src="Biomass.jpg" class="card-img-top" alt="Wine Project">
-
-    <div class="card-body d-flex flex-column">
-
-      <h5 class="card-title">BioMass Prediction</h5>
-
-      <p class="card-text">
-        Analyzing Portuguese wine data to determine which chemical attributes best predict wine quality ratings.
-      </p>
-
-      <a href="BioMass.html" class="btn btn-dark mt-auto">View Project</a>
-
-    </div>
-
-  </div>
-</div>
-<!-- PROJECT 6 -->
-
-<div class="col-md-6 mb-4 d-flex">
-  <div class="card w-100">
-
-    <img src="Hospital.jpg" class="card-img-top" alt="Wine Project">
-
-    <div class="card-body d-flex flex-column">
-
-      <h5 class="card-title">Hospital Readmission Prevention</h5>
-
-      <p class="card-text">
-        Analyzing Portuguese wine data to determine which chemical attributes best predict wine quality ratings.
-      </p>
-
-      <a href="Hospital_Readmission_Prevention.html" class="btn btn-dark mt-auto">View Project</a>
+        <!-- PROJECT CARD -->
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <img src="Hospital.jpg" class="card-img-top">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Hospital Readmission</h5>
+                    <p class="card-text">
+                        Analyzed healthcare data to identify factors contributing to readmissions.
+                    </p>
+                    <a href="Hospital_Readmission_Prevention.html" class="btn btn-dark mt-auto">View Project</a>
+                </div>
+            </div>
+        </div>
 
     </div>
-
-  </div>
-</div>
-
-<!-- FOOTER -->
-<footer>
-    <p>© 2026 Justin Forkert</p>
-</footer>
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
-</body>
-</html>
+</section>
 
