@@ -9,32 +9,60 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/Style.css">
+
+    <style>
+        .project-image {
+            display: block;
+            margin: 0 auto 30px auto;
+            max-width: 85%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+        }
+
+        .project-text {
+            text-align: left;
+            margin-bottom: 30px;
+            line-height: 1.8;
+        }
+
+        .button-row .btn {
+            min-width: 220px;
+            padding: 12px 28px;
+            font-weight: 600;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+        }
+
+        .button-row .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+        }
+    </style>
 </head>
 
 <body>
 
-<!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-
         <a class="navbar-brand" href="index.html">Justin Forkert</a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-       <div class="collapse navbar-collapse" id="mainNavbar">
-    <ul class="navbar-nav ml-auto">
+        <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Portfolio</a>
+                </li>
 
-        <li class="nav-item">
-            <a class="nav-link" href="index.html">Portfolio</a>
-        </li>
-
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
-                Projects
-            </a>
-            <div class="dropdown-menu">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                        Projects
+                    </a>
+                    <div class="dropdown-menu">
                         <a class="dropdown-item" href="projects.html">Projects Summary Page</a>
                         <a class="dropdown-item" href="Winedescription.html">Wine Quality Analysis</a>
                         <a class="dropdown-item" href="PokemonDescription.html">Pokedex SQL Database</a>
@@ -42,61 +70,65 @@
                         <a class="dropdown-item" href="Stock_Market_Pred.html">Stock Market Prediction</a>
                         <a class="dropdown-item" href="BioMass.html">Biomass Prediction (SQL Database)</a>
                         <a class="dropdown-item" href="Hospital_Readmission_Prevention.html">Hospital Readmission Prevention</a>
-            </div>
-        </li>
+                    </div>
+                </li>
 
-        <li class="nav-item">
-            <a class="nav-link" href="mailto:jforkert2010@gmail.com">Contact</a>
-        </li>
-
-    </ul>
-</div>
+                <li class="nav-item">
+                    <a class="nav-link" href="mailto:jforkert2010@gmail.com">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </nav>
 
-<!-- PROJECT CONTENT -->
 <div class="container mt-5">
     <div class="row justify-content-center">
         <div class="col-lg-10">
 
-            <h1 class="text-enter mb-3">Wine Quality Rating Prediction</h1>
+            <h1 class="text-center mb-3">Wine Quality Rating Prediction</h1>
             <hr>
 
-            <p class="text-left mb-4">
-            For the final project in IST 687, I collaborated on an analysis of Vinho Verde wine to identify which chemical attributes most influenced quality ratings. 
-            The dataset included scores assigned by taste testers on a scale from 0 to 10, along with measurements such as pH, sulfates, and other physicochemical properties.
-            </p>
-            <img src="Wine_sampling.webp" class="img-fluid mb-3 rounded shadow" alt="wine">
-            <p class="text-center mb-4">
-            As an introductory data science course, this project covered key stages of the data science lifecycle, from data exploration to predictive modeling. Using R, we generated actionable insights by identifying relationships between wine characteristics and quality. 
-            Our analysis found that volatile acidity, chlorides, and density were negatively associated with wine quality, while alcohol content showed a positive relationship.           
-            </p>
-            <img src="Wine_Correlation.png" class="img-fluid mb-3 rounded shadow" alt="day bar">
-            <p class="text-center mb-4">
-            I contributed across all phases of the project, with a primary focus on visualizing the distributions of wine characteristics. Understanding the variation and spread of these features was critical to interpreting the data effectively.        
-            </p>
-            <img src="volatile acidity boxplot.png" class="img-fluid mb-3 rounded shadow" alt="volatile acidity">
-            <p class="text-left mb-4">
-            Additionally, we used a correlation matrix to examine relationships both between individual attributes and with the quality rating. To extend our analysis, we developed a decision tree model to predict wine quality based on these features.       
+            <p class="project-text">
+                For the final project in IST 687, I collaborated on an analysis of Vinho Verde wine to identify which chemical attributes most influenced quality ratings.
+                The dataset included scores assigned by taste testers on a scale from 0 to 10, along with measurements such as pH, sulfates, and other physicochemical properties.
             </p>
 
-            <!-- BUTTONS -->
-            <div class="mt-4">
+            <img src="Wine_sampling.webp" class="project-image" alt="wine">
 
-                <a href="wine.html" class="btn btn-dark btn-block mb-2" target="_blank">
+            <p class="project-text">
+                As an introductory data science course, this project covered key stages of the data science lifecycle, from data exploration to predictive modeling.
+                Using R, we generated actionable insights by identifying relationships between wine characteristics and quality.
+                Our analysis found that volatile acidity, chlorides, and density were negatively associated with wine quality, while alcohol content showed a positive relationship.
+            </p>
+
+            <img src="Wine_Correlation.png" class="project-image" alt="correlation matrix">
+
+            <p class="project-text">
+                I contributed across all phases of the project, with a primary focus on visualizing the distributions of wine characteristics.
+                Understanding the variation and spread of these features was critical to interpreting the data effectively.
+            </p>
+
+            <img src="volatile acidity boxplot.png" class="project-image" alt="volatile acidity">
+
+            <p class="project-text">
+                Additionally, we used a correlation matrix to examine relationships both between individual attributes and with the quality rating.
+                To extend our analysis, we developed a decision tree model to predict wine quality based on these features.
+            </p>
+
+            <div class="d-flex justify-content-center flex-wrap gap-2 mt-4 button-row">
+                <a href="wine.html" class="btn btn-dark mr-2 mb-2" target="_blank">
                     View Write-Up
                 </a>
 
-                <a href="https://github.com/jforkert2010/WineProject" class="btn btn-outline-dark btn-block" target="_blank">
-                    View Code (github)
+                <a href="https://github.com/jforkert2010/WineProject" class="btn btn-outline-dark mb-2" target="_blank">
+                    View Code (GitHub)
                 </a>
-
             </div>
 
         </div>
     </div>
 </div>
 
-<!-- FOOTER -->
 <footer class="text-center mt-5 mb-4">
     <p>© 2026 Justin Forkert</p>
 </footer>
