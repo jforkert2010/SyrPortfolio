@@ -105,12 +105,132 @@
             </p>   
 
             <img src="Wine_sampling.webp" class="project-image" alt="wine">
-
+            
+            <h2>Business Problem</h2>
+            
             <p class="project-text">
-                As an introductory data science course, this project covered key stages of the data science lifecycle, from data exploration to predictive modeling.
-                Using R, we generated actionable insights by identifying relationships between wine characteristics and quality.
-                Our analysis found that volatile acidity, chlorides, and density were negatively associated with wine quality, while alcohol content showed a positive relationship.
+               Wine producers must maintain consistent product quality to meet customer expectations and protect their brand reputation. 
+               However, evaluating wine quality traditionally relies on expert tasting panels, which can be time-consuming, subjective, and costly.   
             </p>
+            <p class="project-text">
+               The challenge is determining whether measurable chemical properties of a wine can be used to predict its quality rating before it reaches consumers. 
+               If key quality drivers can be identified, wineries can improve quality-control processes, optimize production decisions, and focus on characteristics that are most likely to result in higher-rated products. 
+            </p>
+             <p class="project-text">
+               This project analyzes wine chemistry data and develops predictive models to better understand which factors influence wine quality and whether quality ratings can be estimated using objective measurements.
+            </p>
+
+            <h2>Dataset Overview</h2>
+
+<p class="project-text">
+    The dataset used for this analysis contains physicochemical measurements and
+    quality ratings for Portuguese Vinho Verde wines. The objective was to determine
+    which chemical properties have the greatest influence on wine quality and whether
+    those characteristics can be used to accurately predict quality ratings.
+</p>
+
+<div class="card dataset-card">
+    <div class="card-body">
+        <div class="row">
+
+            <div class="col-md-3 col-6">
+                <div class="dataset-stat">
+                    <h3>6,497</h3>
+                    <p>Records</p>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-6">
+                <div class="dataset-stat">
+                    <h3>11</h3>
+                    <p>Features</p>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-6">
+                <div class="dataset-stat">
+                    <h3>0</h3>
+                    <p>Missing Values</p>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-6">
+                <div class="dataset-stat">
+                    <h3>3-9</h3>
+                    <p>Quality Range</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<h4>Key Variables</h4>
+
+<div class="table-responsive mb-4">
+    <table class="table table-striped table-bordered">
+        <thead class="thead-dark">
+            <tr>
+                <th>Variable</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Fixed Acidity</td>
+                <td>Concentration of non-volatile acids in wine.</td>
+            </tr>
+            <tr>
+                <td>Volatile Acidity</td>
+                <td>Amount of acetic acid present, which can affect taste.</td>
+            </tr>
+            <tr>
+                <td>Citric Acid</td>
+                <td>Contributes freshness and flavor balance.</td>
+            </tr>
+            <tr>
+                <td>Residual Sugar</td>
+                <td>Amount of sugar remaining after fermentation.</td>
+            </tr>
+            <tr>
+                <td>Chlorides</td>
+                <td>Measure of salt concentration.</td>
+            </tr>
+            <tr>
+                <td>Sulphates</td>
+                <td>Preservative compounds that can influence quality.</td>
+            </tr>
+            <tr>
+                <td>Alcohol</td>
+                <td>Percentage of alcohol by volume.</td>
+            </tr>
+            <tr>
+                <td>Quality</td>
+                <td>Expert-rated wine quality score (Target Variable).</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p class="project-text">
+    Before modeling, the dataset was examined for missing values, outliers, and
+    relationships between variables. Since no missing values were present, the data
+    was ready for exploratory analysis and machine learning model development.
+</p>
+
+<h2>Tools & Technologies</h2>
+
+<div class="mb-4">
+    <span class="badge badge-dark p-2">Python</span>
+    <span class="badge badge-dark p-2">Pandas</span>
+    <span class="badge badge-dark p-2">NumPy</span>
+    <span class="badge badge-dark p-2">Scikit-Learn</span>
+    <span class="badge badge-dark p-2">Matplotlib</span>
+    <span class="badge badge-dark p-2">Seaborn</span>
+    <span class="badge badge-dark p-2">Decision Trees</span>
+    <span class="badge badge-dark p-2">Data Visualization</span>
+</div>
+            
 
             <img src="Wine_Correlation.png" class="project-image" alt="correlation matrix">
 
