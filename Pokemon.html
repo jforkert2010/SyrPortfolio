@@ -5,94 +5,212 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Justin Forkert | Projects</title>
+    <title>Justin Forkert | Pokedex SQL Database</title>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
     <link rel="stylesheet" href="css/Style.css">
 
     <style>
+        .project-header {
+            padding: 50px 0 20px;
+        }
+
+        .skills-badge {
+            margin: 5px;
+        }
+
         .pdf-container {
-            margin-top: 40px;
-            display: flex;
-            justify-content: center;
+            margin-top: 30px;
         }
 
         .pdf-frame {
             width: 100%;
-            max-width: 1100px;
-            height: 80vh;
-            border: none;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+            height: 800px;
+            border: 1px solid #ddd;
             border-radius: 10px;
+        }
+
+        .section-title {
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+
+        .project-card {
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,.1);
+            margin-bottom: 30px;
+        }
+
+        @media (max-width: 768px) {
+            .pdf-frame {
+                height: 500px;
+            }
         }
     </style>
 </head>
 
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+
+            <a class="navbar-brand" href="index.html">Justin Forkert</a>
+
+            <button class="navbar-toggler" type="button"
+                data-toggle="collapse"
+                data-target="#mainNavbar">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Portfolio</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle"
+                            href="#"
+                            data-toggle="dropdown">
+                            Projects
+                        </a>
+
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="projects.html">Projects Summary Page</a>
+                            <a class="dropdown-item" href="Winedescription.html">Wine Quality Analysis</a>
+                            <a class="dropdown-item" href="PokemonDescription.html">Pokedex SQL Database</a>
+                            <a class="dropdown-item" href="CreditFraud.html">Financial Fraud Prediction</a>
+                            <a class="dropdown-item" href="Stock_Market_Pred.html">Stock Market Prediction</a>
+                            <a class="dropdown-item" href="BioMass.html">Biomass Prediction</a>
+                            <a class="dropdown-item" href="Hospital_Readmission_Prevention.html">Hospital Readmission Prevention</a>
+                        </div>
+
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="mailto:jforkert2010@gmail.com">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- PROJECT CONTENT -->
     <div class="container">
 
-        <a class="navbar-brand" href="index.html">Justin Forkert</a>
+        <div class="project-header text-center">
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+            <h1>Pokedex SQL Database Project</h1>
 
-        <div class="collapse navbar-collapse" id="mainNavbar">
-            <ul class="navbar-nav ml-auto">
+            <p class="lead">
+                Designing and implementing a relational database
+                for Pokémon data using SQL database principles.
+            </p>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Portfolio</a>
-                </li>
+            <span class="badge badge-primary skills-badge">SQL</span>
+            <span class="badge badge-primary skills-badge">Database Design</span>
+            <span class="badge badge-primary skills-badge">ER Modeling</span>
+            <span class="badge badge-primary skills-badge">Normalization</span>
+            <span class="badge badge-primary skills-badge">Data Analysis</span>
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
-                        Projects
-                    </a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="projects.html">Projects Summary Page</a>
-                        <a class="dropdown-item" href="Winedescription.html">Wine Quality Analysis</a>
-                        <a class="dropdown-item" href="PokemonDescription.html">Pokedex SQL Database</a>
-                        <a class="dropdown-item" href="CreditFraud.html">Financial Fraud Prediction</a>
-                        <a class="dropdown-item" href="Stock_Market_Pred.html">Stock Market Prediction</a>
-                        <a class="dropdown-item" href="BioMass.html">Biomass Prediction (SQL Database)</a>
-                        <a class="dropdown-item" href="Hospital_Readmission_Prevention.html">Hospital Readmission Prevention</a>
-                    </div>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="mailto:jforkert2010@gmail.com">Contact</a>
-                </li>
-
-            </ul>
         </div>
+
+        <!-- Overview -->
+        <div class="project-card">
+
+            <h3>Project Overview</h3>
+
+            <p>
+                This project focused on designing a normalized relational
+                database to manage Pokémon information including species,
+                types, abilities, evolutions, trainers, and battle statistics.
+                The database was structured to reduce redundancy, maintain
+                data integrity, and support efficient SQL querying.
+            </p>
+
+        </div>
+
+        <!-- Business Problem -->
+        <div class="project-card">
+
+            <h3>Business Problem</h3>
+
+            <p>
+                Large datasets with interconnected information require
+                proper database design to maintain consistency and support
+                efficient retrieval of information. The objective was to
+                create a scalable relational database capable of supporting
+                complex relationships and analytical queries.
+            </p>
+
+        </div>
+
+        <!-- Skills -->
+        <div class="project-card">
+
+            <h3>Skills Demonstrated</h3>
+
+            <ul>
+                <li>Relational Database Design</li>
+                <li>Normalization (1NF, 2NF, 3NF)</li>
+                <li>Primary and Foreign Key Relationships</li>
+                <li>SQL Query Development</li>
+                <li>Entity Relationship Modeling</li>
+                <li>Data Integrity Management</li>
+            </ul>
+
+        </div>
+
+        <!-- Download Button -->
+        <div class="text-center mb-4">
+
+            <a href="PokemonDatabase.pdf"
+                class="btn btn-primary btn-lg"
+                target="_blank">
+
+                Download Full Report
+
+            </a>
+
+        </div>
+
+        <!-- PDF Viewer -->
+        <h3 class="section-title text-center">
+            Full Project Report
+        </h3>
+
+        <div class="pdf-container">
+
+            <iframe
+                src="PokemonDatabase.pdf"
+                class="pdf-frame">
+            </iframe>
+
+        </div>
+
     </div>
-</nav>
 
-<!-- CONTENT -->
-<div class="container mt-5 text-center">
+    <!-- SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 
-    <h2 class="mb-4">Pokedex SQL Database Project</h2>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 
-    <div class="pdf-container">
-        <embed 
-            src="PokemonDatabase.pdf" 
-            type="application/pdf" 
-            class="pdf-frame"
-        />
-    </div>
-
-</div>
-
-<!-- SCRIPTS -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
 </body>
+
 </html>
-
-
-
