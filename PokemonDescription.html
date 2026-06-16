@@ -69,7 +69,76 @@
          <p class="text-left mb-4">
         The primary challenge was to create a normalized relational database that accurately modeled the relationships between Pokémon entities while ensuring data integrity, reducing redundancy, and enabling efficient SQL-based reporting. 
         The project required applying database design principles, including entity relationship modeling, normalization, primary and foreign key constraints, and query optimization.                 </p>          
-       
+       <!-- Dataset Overview -->
+<div class="project-card">
+
+    <h3>Dataset Overview</h3>
+
+    <p>
+        The database was designed to store and manage information related to
+        Pokémon species, trainers, abilities, types, moves, and evolutions.
+        The dataset consists of multiple interconnected tables linked through
+        primary and foreign key relationships.
+    </p>
+
+    <div class="table-responsive">
+
+        <table class="table table-striped table-bordered">
+
+            <thead class="thead-dark">
+                <tr>
+                    <th>Table Name</th>
+                    <th>Description</th>
+                    <th>Key Fields</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>Pokemon</td>
+                    <td>Stores core Pokémon information.</td>
+                    <td>Pokemon_ID (PK)</td>
+                </tr>
+
+                <tr>
+                    <td>Types</td>
+                    <td>Stores Pokémon type information.</td>
+                    <td>Type_ID (PK)</td>
+                </tr>
+
+                <tr>
+                    <td>Abilities</td>
+                    <td>Stores Pokémon abilities.</td>
+                    <td>Ability_ID (PK)</td>
+                </tr>
+
+                <tr>
+                    <td>Evolutions</td>
+                    <td>Tracks Pokémon evolution paths.</td>
+                    <td>Evolution_ID (PK)</td>
+                </tr>
+
+                <tr>
+                    <td>Trainers</td>
+                    <td>Stores trainer information.</td>
+                    <td>Trainer_ID (PK)</td>
+                </tr>
+
+                <tr>
+                    <td>Moves</td>
+                    <td>Stores move characteristics and power.</td>
+                    <td>Move_ID (PK)</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+                
                
                 <h4 class="text-center mb-1">Conceptual Model</h4>
                 <img src="Pokemon_conceptual_model.png" class="img-fluid rounded shadow" alt="Database Schema">
