@@ -232,12 +232,9 @@
    We used histograms, boxplots, and confusion matrix to understand our data.
 </p>
 
-<h2>Model development</h2>
 
-<h2>Key Findings</h2>
-            
-
-            <img src="Wine_Correlation.png" class="project-image" alt="correlation matrix">
+        
+<img src="Wine_Correlation.png" class="project-image" alt="correlation matrix">
 
             <p class="project-text">
         The distributions of wine characteristics was explored through histograms and boxplots. Understanding the variation and spread of these features was critical to interpreting the data effectively.
@@ -257,20 +254,32 @@
 
             <p class="project-text">
                 Additionally, we used a correlation matrix to examine relationships both between individual attributes and with the quality rating.
-                To extend our analysis, we developed a decision tree model to predict wine quality based on these features.
             </p>
 
             <img src="Wine_Correlation.png" class="project-image" alt="correlation matrix">
             
             <h2>Model development</h2>
 
+              <p class="project-text">
+                To extend our analysis, we developed a decision tree model to predict wine quality based on these features.
+            </p>
+
+            <img src="Wine_Decision_Tree.png" class="project-image" alt="Decision Tree">    
             
 
-            <h2>Key Findings</h2>
-            
-            <h2>Model development</h2>
-
-            <h2>Key Findings</h2>
+          <div class="alert alert-success">
+          <h4>Key Exploratory Findings</h4>
+        <ul>
+            <li>Alcohol showed the strongest positive correlation with quality.</li>
+            <li>Volatile acidity demonstrated a negative relationship with quality.</li>
+            <li>Quality ratings were concentrated between 5 and 7.</li>
+            <li>Several variables contained meaningful outliers.</li>
+        </ul>
+        <p class="project-text">
+               The distribution of quality ratings revealed a concentration of average-quality wines, suggesting a class imbalance that could impact model performance. 
+            This insight informed the selection of evaluation metrics during model development.
+        </p>
+        </div>
 
             <div class="d-flex justify-content-center flex-wrap gap-2 mt-4 button-row">
                 <a href="wine.html" class="btn btn-dark mr-2 mb-2" target="_blank">
