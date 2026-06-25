@@ -6,10 +6,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Justin Forkert | Projects</title>
+    <title>Justin Forkert | Financial Fraud Prediction</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/Style.css">
+
+    <style>
+        .project-section {
+            margin-bottom: 60px;
+        }
+
+        .project-section h2 {
+            border-bottom: 3px solid #007bff;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .project-section p,
+        .project-section li {
+            line-height: 1.8;
+        }
+
+        .project-card {
+            border: none;
+            box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,.075);
+            margin-bottom: 40px;
+        }
+
+        .project-card img {
+            max-width: 900px;
+            width: 100%;
+        }
+
+        .hero-banner {
+            background-color: #f8f9fa;
+            padding: 60px 0;
+            margin-bottom: 50px;
+        }
+    </style>
 </head>
 
 <body>
@@ -38,12 +72,12 @@
                         </a>
 
                         <div class="dropdown-menu">
-                        <a class="dropdown-item" href="Winedescription.html">Wine Quality Analysis</a>
-                        <a class="dropdown-item" href="PokemonDescription.html">Pokedex SQL Database</a>
-                        <a class="dropdown-item" href="CreditFraud.html">Financial Fraud Prediction</a>
-                        <a class="dropdown-item" href="Stock_Market_Pred.html">Stock Market Prediction</a>
-                        <a class="dropdown-item" href="BioMass.html">Biomass Prediction (SQL Database)</a>
-                        <a class="dropdown-item" href="Hospital_Readmission_Prevention.html">Hospital Readmission Prevention</a>
+                            <a class="dropdown-item" href="Winedescription.html">Wine Quality Analysis</a>
+                            <a class="dropdown-item" href="PokemonDescription.html">Pokedex SQL Database</a>
+                            <a class="dropdown-item" href="CreditFraud.html">Financial Fraud Prediction</a>
+                            <a class="dropdown-item" href="Stock_Market_Pred.html">Stock Market Prediction</a>
+                            <a class="dropdown-item" href="BioMass.html">Biomass Prediction</a>
+                            <a class="dropdown-item" href="Hospital_Readmission_Prevention.html">Hospital Readmission Prevention</a>
                         </div>
                     </li>
 
@@ -54,135 +88,247 @@
                 </ul>
 
             </div>
-
         </div>
     </nav>
 
-<!-- PROJECT CONTENT -->
-<section class>
-    <h2>Executive Summary</h2>
-    <p>
-        Credit card fraud poses a significant challenge for financial institutions due to
-        the large volume of daily transactions and the relatively small number of fraudulent
-        cases. The objective of this project was to develop machine learning models capable
-        of identifying fraudulent transactions while minimizing false positives. Several
-        classification algorithms were evaluated and compared using fraud-specific performance
-        metrics.
-    </p>
-</section>
+    <!-- HERO SECTION -->
+    <div class="hero-banner">
+        <div class="container text-center">
 
-<section class>
-    <h2>Business Problem</h2>
-    <p>
-        Financial institutions process millions of transactions daily, making it difficult
-        to identify fraudulent activity in real time. Fraudulent transactions represent a
-        very small percentage of total activity, creating a highly imbalanced classification
-        problem.
-    </p>
+            <h1 class="display-4">Financial Fraud Prediction</h1>
 
-    <p>
-        The goal of this project was to build predictive models that could accurately identify
-        potentially fraudulent transactions and support risk management efforts while reducing
-        financial losses and protecting customers.
-    </p>
-</section> 
-
-<section class>
-    <h2>Dataset Overview</h2>
-
-    <table class="table table-bordered">
-        <thead>
-            <tr>
-                <th>Attribute</th>
-                <th>Value</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Dataset Source</td>
-                <td>Kaggle Credit Card Fraud Dataset</td>
-            </tr>
-            <tr>
-                <td>Records</td>
-                <td>284,807 Transactions</td>
-            </tr>
-            <tr>
-                <td>Fraud Cases</td>
-                <td>492 Transactions</td>
-            </tr>
-            <tr>
-                <td>Features</td>
-                <td>30 Variables</td>
-            </tr>
-        </tbody>
-    </table>
-</section>
-
-<section class="project-section">
-    <h2>Key Findings</h2>
-
-    <ul>
-        <li>Fraudulent transactions represented less than 1% of the dataset.</li>
-        <li>Class imbalance significantly affected model performance.</li>
-        <li>Recall proved more important than overall accuracy.</li>
-        <li>Tree-based models outperformed baseline logistic regression.</li>
-        <li>Several transaction characteristics showed predictive value for fraud detection.</li>
-    </ul>
-</section>
-
-
-<div class="container mt-4 mb-5">
-    <div class="row justify-content-center">
-        <div class>
-
-            <h1 class="text-center mb-3">Financial Fraud Prediction</h1>
-            <hr class="mb-4">
-
-            <p class="mb-3">
-                This project focused on applying machine learning techniques to detect patterns in financial fraud data. 
-                Models explored included Random Forest, Decision Trees, KNN, SVC, Logistic Regression, SGD, and XGBoost.
-            </p>
-            <div class="text-center">
-                        <img src="Machine_Learning_Model_Table.png" class="img-fluid mb-3 rounded shadow" alt="wine">
-            </div>
-            <p class="mb-3">
-                Using Python, we performed data cleaning, exploratory analysis, and visualization to better understand transaction behavior. 
-                Key trends included variation in fraud frequency by transaction type and timing.
-            </p>
-            <div class="text-center">
-                        <img src="ChancesbyDayofMonth.png" class="img-fluid mb-3 rounded shadow" alt="wine">
-            </div>
-            <p class="mb-3">
-                Multiple models were evaluated using the F1 score to balance precision and recall. 
-                The most important predictors of fraud were transaction amount and transfer type.
-            </p>
-             <div class="text-center">
-                      <img src="Confusion_Matrix.png" class="img-fluid mb-3 rounded shadow" alt="wine">
-             </div>
-            <p class="mb-4">
-                This project also emphasized ethical considerations, including data privacy and bias in automated decision-making systems.
+            <p class="lead">
+                Detecting fraudulent financial transactions using machine learning
+                classification techniques.
             </p>
 
-            <!-- BUTTONS -->
-            <div class="text-center mt-3">
-                <a href="https://github.com/jforkert2010/Financial_Fraud_Prediction"
-                   class="btn btn-secondary btn-sm mx-1 mb-2" target="_blank">
-                    Github
-                </a>
-            </div>
+            <p>
+                <strong>Tools:</strong> Python, Pandas, Scikit-Learn, XGBoost, Matplotlib
+            </p>
 
         </div>
     </div>
-</div>
-    
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- MAIN CONTENT -->
+    <div class="container mb-5">
+
+        <!-- EXECUTIVE SUMMARY -->
+        <section class="project-section">
+
+            <h2>Executive Summary</h2>
+
+            <p>
+                Credit card fraud poses a significant challenge for financial institutions due to
+                the large volume of daily transactions and the relatively small number of fraudulent
+                cases. The objective of this project was to develop machine learning models capable
+                of identifying fraudulent transactions while minimizing false positives.
+            </p>
+
+            <p>
+                Multiple classification algorithms were evaluated and compared using fraud-specific
+                performance metrics to determine the most effective approach for fraud detection.
+            </p>
+
+        </section>
+
+        <!-- BUSINESS PROBLEM -->
+        <section class="project-section">
+
+            <h2>Business Problem</h2>
+
+            <p>
+                Financial institutions process millions of transactions every day, making it difficult
+                to identify fraudulent activity in real time. Fraudulent transactions account for only
+                a small percentage of total activity, creating a highly imbalanced classification problem.
+            </p>
+
+            <p>
+                The goal of this project was to build predictive models capable of accurately identifying
+                fraudulent transactions while minimizing disruptions to legitimate customers and reducing
+                financial losses.
+            </p>
+
+        </section>
+
+        <!-- DATASET OVERVIEW -->
+        <section class="project-section">
+
+            <h2>Dataset Overview</h2>
+
+            <div class="table-responsive">
+
+                <table class="table table-bordered table-striped">
+
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Attribute</th>
+                            <th>Value</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Dataset Source</td>
+                            <td>Kaggle Credit Card Fraud Dataset</td>
+                        </tr>
+                        <tr>
+                            <td>Total Transactions</td>
+                            <td>284,807</td>
+                        </tr>
+                        <tr>
+                            <td>Fraudulent Transactions</td>
+                            <td>492</td>
+                        </tr>
+                        <tr>
+                            <td>Features</td>
+                            <td>30 Variables</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+        <!-- KEY FINDINGS -->
+        <section class="project-section">
+
+            <h2>Key Findings</h2>
+
+            <ul>
+                <li>Fraudulent transactions represented less than 1% of the dataset.</li>
+                <li>Class imbalance significantly affected model performance.</li>
+                <li>Recall proved more important than overall accuracy.</li>
+                <li>Tree-based models outperformed baseline logistic regression.</li>
+                <li>Transaction amount and transfer type emerged as important predictors.</li>
+            </ul>
+
+        </section>
+
+        <!-- MODEL DEVELOPMENT -->
+        <section class="project-section">
+
+            <h2>Model Development</h2>
+
+            <p>
+                Multiple machine learning models were developed and evaluated, including
+                Random Forest, Decision Tree, K-Nearest Neighbors (KNN), Support Vector
+                Classification (SVC), Logistic Regression, Stochastic Gradient Descent (SGD),
+                and XGBoost.
+            </p>
+
+            <p>
+                Due to the highly imbalanced nature of the dataset, model performance was
+                primarily evaluated using the F1 score, balancing precision and recall.
+            </p>
+
+        </section>
+
+        <!-- MODEL COMPARISON -->
+        <div class="card project-card">
+            <div class="card-body">
+
+                <h4 class="mb-3">Model Performance Comparison</h4>
+
+                <p>
+                    Several classification algorithms were evaluated to determine the most
+                    effective approach for identifying fraudulent transactions.
+                </p>
+
+                <div class="text-center">
+                    <img src="Machine_Learning_Model_Table.png"
+                         class="img-fluid rounded shadow"
+                         alt="Model Comparison">
+                </div>
+
+            </div>
+        </div>
+
+        <!-- EDA -->
+        <div class="card project-card">
+            <div class="card-body">
+
+                <h4 class="mb-3">Fraud Trends Analysis</h4>
+
+                <p>
+                    Exploratory data analysis revealed patterns in fraud occurrence,
+                    including variation by transaction timing and behavior.
+                </p>
+
+                <div class="text-center">
+                    <img src="ChancesbyDayofMonth.png"
+                         class="img-fluid rounded shadow"
+                         alt="Fraud Trends">
+                </div>
+
+            </div>
+        </div>
+
+        <!-- CONFUSION MATRIX -->
+        <div class="card project-card">
+            <div class="card-body">
+
+                <h4 class="mb-3">Model Evaluation</h4>
+
+                <p>
+                    The confusion matrix illustrates the model's ability to distinguish
+                    between legitimate and fraudulent transactions.
+                </p>
+
+                <div class="text-center">
+                    <img src="Confusion_Matrix.png"
+                         class="img-fluid rounded shadow"
+                         alt="Confusion Matrix">
+                </div>
+
+            </div>
+        </div>
+
+        <!-- BUSINESS IMPACT -->
+        <section class="project-section">
+
+            <h2>Business Impact</h2>
+
+            <p>
+                Effective fraud detection systems help financial institutions reduce financial
+                losses, improve customer trust, and focus investigative resources on high-risk
+                transactions. The analytical techniques demonstrated in this project can also
+                be applied to anomaly detection, risk management, and operational monitoring.
+            </p>
+
+        </section>
+
+        <!-- ETHICS -->
+        <section class="project-section">
+
+            <h2>Ethical Considerations</h2>
+
+            <p>
+                This project also examined ethical considerations associated with machine learning,
+                including data privacy, fairness, and the potential for bias in automated decision-making
+                systems. Responsible deployment of predictive models is critical when financial decisions
+                may directly affect customers.
+            </p>
+
+        </section>
+
+        <!-- GITHUB -->
+        <div class="text-center mt-5">
+
+            <a href="https://github.com/jforkert2010/Financial_Fraud_Prediction"
+               class="btn btn-primary btn-lg"
+               target="_blank">
+                View Project on GitHub
+            </a>
+
+        </div>
+
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
 </body>
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-
-<!-- Bootstrap CDN -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
 </html>
-
-
