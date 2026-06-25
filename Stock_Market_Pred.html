@@ -5,10 +5,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Justin Forkert | Projects</title>
+    <title>Justin Forkert | Stock Performance Prediction</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/Style.css">
+
+    <style>
+        .project-section {
+            margin-bottom: 60px;
+        }
+
+        .project-section h2 {
+            border-bottom: 3px solid #007bff;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .project-section p,
+        .project-section li {
+            line-height: 1.8;
+        }
+
+        .hero-banner {
+            background-color: #f8f9fa;
+            padding: 60px 0;
+            margin-bottom: 50px;
+        }
+
+        .project-card {
+            border: none;
+            box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,.075);
+            margin-bottom: 40px;
+        }
+
+        .project-card img {
+            max-width: 900px;
+            width: 100%;
+        }
+
+        .badge {
+            font-size: 0.9rem;
+            padding: 10px 14px;
+        }
+    </style>
 </head>
 
 <body>
@@ -37,13 +76,13 @@
                         </a>
 
                         <div class="dropdown-menu">
-                        <a class="dropdown-item" href="projects.html">Projects Summary Page</a>
-                        <a class="dropdown-item" href="Winedescription.html">Wine Quality Analysis</a>
-                        <a class="dropdown-item" href="PokemonDescription.html">Pokedex SQL Database</a>
-                        <a class="dropdown-item" href="CreditFraud.html">Financial Fraud Prediction</a>
-                        <a class="dropdown-item" href="Stock_Market_Pred.html">Stock Market Prediction</a>
-                        <a class="dropdown-item" href="BioMass.html">Biomass Prediction (SQL Database)</a>
-                        <a class="dropdown-item" href="Hospital_Readmission_Prevention.html">Hospital Readmission Prevention</a>
+                            <a class="dropdown-item" href="projects.html">Projects Summary Page</a>
+                            <a class="dropdown-item" href="Winedescription.html">Wine Quality Analysis</a>
+                            <a class="dropdown-item" href="PokemonDescription.html">Pokedex SQL Database</a>
+                            <a class="dropdown-item" href="CreditFraud.html">Financial Fraud Prediction</a>
+                            <a class="dropdown-item" href="Stock_Market_Pred.html">Stock Performance Prediction</a>
+                            <a class="dropdown-item" href="BioMass.html">Biomass Prediction</a>
+                            <a class="dropdown-item" href="Hospital_Readmission_Prevention.html">Hospital Readmission Prevention</a>
                         </div>
                     </li>
 
@@ -58,69 +97,195 @@
         </div>
     </nav>
 
+    <!-- HERO SECTION -->
+    <div class="hero-banner">
+        <div class="container text-center">
 
-<!-- HERO IMAGE -->
-<section class>
-    <img src="stockmarket.png" class="img-fluid rounded shadow" alt="Stock Market Project">
-</section>
+            <h1 class="display-4">
+                Stock Performance Prediction Using Apache Spark and Machine Learning
+            </h1>
 
-<!-- PROJECT CONTENT -->
-<section class>
-    <div>
+            <p class="lead">
+                Leveraging big data analytics and distributed computing to identify
+                patterns in financial markets and support investment decision-making.
+            </p>
 
-        <h2>
-            Big Data Analytics – Stock Performance Prediction
-        </h2>
+            <p>
+                <strong>Tools:</strong> Python, Apache Spark, Machine Learning,
+                Data Visualization
+            </p>
 
-        <p>
-            IST 718 • Big Data Analytics Project
-        </p>
+            <img src="stockmarket.png"
+                 class="img-fluid rounded shadow mt-4"
+                 style="max-width:900px;"
+                 alt="Stock Market Project">
 
-        <p>
-            This project focused on building a scalable big data solution to predict stock performance using distributed computing and machine learning techniques. Leveraging <strong>Python</strong> and <strong>Apache Spark</strong>, I developed data pipelines to ingest, clean, and transform large financial datasets.
-        </p>
+        </div>
+    </div>
 
-        <p>
-            The workflow followed the full data science lifecycle, including preprocessing, feature engineering, model development, and evaluation. A predictive model was implemented to generate insights for potential investment strategies.
-        </p>
+    <!-- MAIN CONTENT -->
+    <div class="container mb-5">
 
-        <p>
-            Spark pipelines streamlined data processing and model execution, while visualizations were used to communicate findings effectively to both technical and non-technical audiences.
-        </p>
+        <!-- EXECUTIVE SUMMARY -->
+        <section class="project-section">
+
+            <h2>Executive Summary</h2>
+
+            <p>
+                This project explored the use of Apache Spark and machine learning
+                techniques to predict stock performance using large-scale financial
+                datasets. The objective was to create a scalable analytics pipeline
+                capable of processing high volumes of data and generating predictive
+                insights for investment decision-making.
+            </p>
+
+        </section>
+
+        <!-- BUSINESS PROBLEM -->
+        <section class="project-section">
+
+            <h2>Business Problem</h2>
+
+            <p>
+                Financial institutions and investors rely on accurate market forecasts
+                to support investment decisions. Traditional methods may struggle to
+                process the volume and complexity of modern financial datasets.
+            </p>
+
+            <p>
+                The goal of this project was to leverage distributed computing and
+                machine learning techniques to uncover patterns in historical stock
+                market data and evaluate predictive modeling approaches.
+            </p>
+
+        </section>
+
+        <!-- DATASET OVERVIEW -->
+        <section class="project-section">
+
+            <h2>Dataset Overview</h2>
+
+            <div class="card project-card">
+                <div class="card-body">
+
+                    <ul>
+                        <li>Historical stock market pricing data</li>
+                        <li>Large-scale datasets processed with Apache Spark</li>
+                        <li>Multiple financial indicators and market variables</li>
+                        <li>Data transformed using Spark DataFrames and pipelines</li>
+                        <li>Prepared for predictive modeling and evaluation</li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </section>
+
+        <!-- METHODOLOGY -->
+        <section class="project-section">
+
+            <h2>Methodology</h2>
+
+            <ol>
+                <li>Data ingestion and loading with Apache Spark</li>
+                <li>Data cleaning and preprocessing</li>
+                <li>Feature engineering and transformation</li>
+                <li>Machine learning model development</li>
+                <li>Model evaluation and validation</li>
+                <li>Visualization and reporting of findings</li>
+            </ol>
+
+        </section>
+
+        <!-- PROJECT DETAILS -->
+        <section class="project-section">
+
+            <h2>Project Implementation</h2>
+
+            <p>
+                Using Python and Apache Spark, scalable data pipelines were developed
+                to ingest, clean, and transform large financial datasets. Spark's
+                distributed computing framework enabled efficient processing of
+                high-volume data while maintaining performance.
+            </p>
+
+            <p>
+                Machine learning techniques were applied to identify patterns and
+                generate predictive insights regarding stock performance. Feature
+                engineering and preprocessing techniques were used to improve model
+                effectiveness and support analysis.
+            </p>
+
+            <p>
+                Visualizations were developed to communicate findings and highlight
+                trends in market behavior for both technical and non-technical audiences.
+            </p>
+
+        </section>
 
         <!-- KEY OUTCOMES -->
-        <h4 class="mt-4 mb-3">Key Outcomes</h4>
-        <ul class="text-muted">
-            <li>Built scalable Spark pipelines for large-scale data processing</li>
-            <li>Applied machine learning models to financial data</li>
-            <li>Generated actionable insights for investment decision-making</li>
-            <li>Communicated results through visualization and reporting</li>
-            <li>Evaluated ethical considerations in financial prediction models</li>
-        </ul>
+        <div class="card project-card">
+            <div class="card-body">
 
-        <!-- SKILLS -->
-        <div class="mt-4">
-            <span class="badge badge-dark">Python</span>
-            <span class="badge badge-secondary">Apache Spark</span>
-            <span class="badge badge-light border">Machine Learning</span>
-            <span class="badge badge-light border">Big Data</span>
+                <h3>Key Outcomes</h3>
+
+                <ul>
+                    <li>Built scalable Spark pipelines for large-scale data processing.</li>
+                    <li>Applied machine learning models to financial datasets.</li>
+                    <li>Generated insights to support investment decision-making.</li>
+                    <li>Created visualizations to communicate analytical findings.</li>
+                    <li>Evaluated ethical considerations of predictive financial models.</li>
+                </ul>
+
+            </div>
         </div>
 
-        <!-- BUTTONS -->
-        <div class="mt-4 d-flex flex-wrap">
+        <!-- SKILLS -->
+        <section class="project-section">
+
+            <h2>Skills Demonstrated</h2>
+
+            <span class="badge badge-primary mr-2 mb-2">Python</span>
+            <span class="badge badge-success mr-2 mb-2">Apache Spark</span>
+            <span class="badge badge-info mr-2 mb-2">Machine Learning</span>
+            <span class="badge badge-warning mr-2 mb-2">Big Data Analytics</span>
+            <span class="badge badge-dark mr-2 mb-2">Data Engineering</span>
+            <span class="badge badge-secondary mr-2 mb-2">Data Visualization</span>
+
+        </section>
+
+        <!-- BUSINESS IMPACT -->
+        <section class="project-section">
+
+            <h2>Business Impact</h2>
+
+            <p>
+                Predictive analytics can help investors and financial organizations
+                identify market trends, improve forecasting accuracy, and support
+                data-driven decision-making. The techniques demonstrated in this project
+                are also applicable to forecasting, risk assessment, and operational
+                analytics across multiple industries.
+            </p>
+
+        </section>
+
+        <!-- GITHUB BUTTON -->
+        <div class="text-center mt-5">
 
             <a href="https://github.com/jforkert2010/Stock-Predictions"
-               class="btn btn-secondary mr-2 mb-2" target="_blank">
-                View Github page
+               class="btn btn-primary btn-lg"
+               target="_blank">
+                View Project on GitHub
             </a>
-
 
         </div>
 
     </div>
-</section>
-</html>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
 </body>
+</html>
