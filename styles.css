@@ -286,5 +286,23 @@ body {
   /* Visual */
   background-color: #4aaaa5;
 }
+.project-section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.project-section h2 {
+    border-bottom: 3px solid #007bff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.project-section p {
+    line-height: 1.8;
+}
+
+.project-section ul {
+    line-height: 1.8;
+}
 
 /* ----FOOTER END---- */
